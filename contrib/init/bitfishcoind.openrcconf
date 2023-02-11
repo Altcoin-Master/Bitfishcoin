@@ -1,0 +1,33 @@
+# /etc/conf.d/bitfishcoind: config file for /etc/init.d/bitfishcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bitfishcoincore/bitfishcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bitfishcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitfishcoind.pid"
+
+# Where to write bitfishcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bitfishcoind"
+
+# User and group to own bitfishcoind process
+#BITCOIND_USER="bitfishcoincore"
+#BITCOIND_GROUP="bitfishcoincore"
+
+# Path to bitfishcoind executable
+#BITCOIND_BIN="/usr/bin/bitfishcoind"
+
+# Nice value to run bitfishcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitfishcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

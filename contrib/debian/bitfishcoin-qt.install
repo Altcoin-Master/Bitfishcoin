@@ -1,0 +1,6 @@
+usr/local/bin/bitfishcoin-qt usr/bin
+share/pixmaps/bitfishcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitfishcoin16.xpm usr/share/pixmaps
+share/pixmaps/bitfishcoin128.png usr/share/pixmaps
+debian/bitfishcoin-qt.desktop usr/share/applications
+debian/bitfishcoin-qt.protocol usr/share/kde4/services/

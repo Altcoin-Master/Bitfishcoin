@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[bitfishcoin.qt-translation-012x]
+file_filter = src/qt/locale/bitfishcoin_<lang>.ts
+source_file = src/qt/locale/bitfishcoin_en.ts
+source_lang = en

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Bitfishcoin Core
+Comment=Bitfishcoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Bitfishcoin peer-to-peer Netzwerk
+Comment[fr]=Bitfishcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Bitfishcoin, eşten eşe kriptografik sanal para birimi
+Exec=bitfishcoin-qt %u
+Terminal=false
+Type=Application
+Icon=bitfishcoin128
+MimeType=x-scheme-handler/bitfishcoin;
+Categories=Office;Finance;

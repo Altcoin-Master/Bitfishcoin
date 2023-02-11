@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+#  bitfishcoind The Bitfishcoin Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: bitfishcoind
+# processname: bitfishcoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/bitfishcoind, see below
+if [ -f /etc/sysconfig/bitfishcoind ]; then
+        . /etc/sysconfig/bitfishcoind
+fi
+
+RETVAL=0
+
+prog=bitfishcoind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitfishcoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitfishcoind}
+
+# bitfishcoind defaults to /usr/bin/bitfishcoind, override with BITCOIND_BIN
+bitfishcoind=${BITCOIND_BIN-/usr/bin/bitfishcoind}
+
+# bitfishcoind opts default to -disablewallet, override with BITCOIND_OPTS
+bitfishcoind_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $bitfishcoind $bitfishcoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

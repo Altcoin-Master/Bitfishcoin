@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/bitfishcoin_ar.qm</file>
+        <file alias="bg">locale/bitfishcoin_bg.qm</file>
+        <file alias="de">locale/bitfishcoin_de.qm</file>
+        <file alias="en">locale/bitfishcoin_en.qm</file>
+        <file alias="es">locale/bitfishcoin_es.qm</file>
+        <file alias="fi">locale/bitfishcoin_fi.qm</file>
+        <file alias="fr">locale/bitfishcoin_fr.qm</file>
+        <file alias="it">locale/bitfishcoin_it.qm</file>
+        <file alias="ja">locale/bitfishcoin_ja.qm</file>
+        <file alias="ko">locale/bitfishcoin_ko.qm</file>
+        <file alias="nl">locale/bitfishcoin_nl.qm</file>
+        <file alias="pl">locale/bitfishcoin_pl.qm</file>
+        <file alias="pt">locale/bitfishcoin_pt.qm</file>
+        <file alias="ro">locale/bitfishcoin_ro.qm</file>
+        <file alias="ru">locale/bitfishcoin_ru.qm</file>
+        <file alias="sk">locale/bitfishcoin_sk.qm</file>
+        <file alias="th">locale/bitfishcoin_th.qm</file>
+        <file alias="tr">locale/bitfishcoin_tr.qm</file>
+        <file alias="vi">locale/bitfishcoin_vi.qm</file>
+        <file alias="zh_CN">locale/bitfishcoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/bitfishcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>
