@@ -141,10 +141,10 @@ This part of the guide is to get your local wallet or control wallet setup. If y
 
 ```
 walletpassphrase password time (in seconds)
-dumpprivkey "address" (address is the receiving address you sent the 100k BTSC to)
+dumpprivkey "address" (address is the receiving address you sent the 200k BTSC to)
 ```
 
-- Send 100,000 BTSC to self (this is the minimum collateral amount)
+- Send 200,000 BTSC to self (this is the minimum collateral amount)
 - Wait for 2 confirmations
 - Smartnodes rules:
 ```
