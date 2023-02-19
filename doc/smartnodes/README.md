@@ -205,7 +205,7 @@ Paste in what you copied from the .conf file made during the protx command, save
 When done with this, run bitfishcoind from the terminal:
 
 ```bash
-~/./bitfishcoind
+~/./bitfishcoind -daemon
 ```
 
 When this is done, wait a couple minutes until running `~/./bitfishcoin-cli smartnode status` to check the status of your smartnode. This should return: `Ready Ready`
@@ -213,3 +213,6 @@ When this is done, wait a couple minutes until running `~/./bitfishcoin-cli smar
 :::success Success!
 Your Smartnode should now be running!
 :::
+
+## View node status in QT wallet
+Settings - Options - Wallet - Show Smartnode Tab
