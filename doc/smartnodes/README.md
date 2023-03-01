@@ -107,13 +107,13 @@ adduser <username_here>
 Get Bitfishcoin wallet / daemon and bootstrap:
 
 ```bash
-mkdir -p ltrm_latest
-cd ltrm_latest
+mkdir -p latest
+cd latest
 wget https://github.com/Altcoin-Master/Bitfishcoin/releases/download/v1.1.0.0/bitfishcoin-linux-1.1.0.0.zip
 unzip bitfishcoin-linux-1.1.0.0.zip
 mkdir ~/.bitfishcoincore && touch ~/.bitfishcoincore/bitfishcoin.conf
 echo "daemon=1" >> ~/.bitfishcoincore/bitfishcoin.conf
-~/ltrm_latest/bitfishcoin-linux-1.1.0.0/./bitfishcoind
+~/latest/bitfishcoin-linux-1.1.0.0/./bitfishcoind
 echo all done!
 ```
 
