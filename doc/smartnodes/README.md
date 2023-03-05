@@ -108,10 +108,12 @@ Get Bitfishcoin wallet / daemon and bootstrap:
 
 ```bash
 mkdir -p latest
-sudo chmod -R 755 latest
 cd latest
 wget https://github.com/Altcoin-Master/Bitfishcoin/releases/download/v1.1.0.0/bitfishcoin-linux-1.1.0.0.zip
 unzip bitfishcoin-linux-1.1.0.0.zip
+cd ..
+chmod -R 755 latest
+cd latest
 mkdir ~/.bitfishcoincore && touch ~/.bitfishcoincore/bitfishcoin.conf
 echo "daemon=1" >> ~/.bitfishcoincore/bitfishcoin.conf
 ~/latest/bitfishcoin-linux-1.1.0.0/./bitfishcoind
